@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DefaultHologram</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            base
+                    </a>
+            </div>
+            <div class="library-version">
+4.3.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":base:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="base::cn.charlotte.pit.util.hologram/DefaultHologram///PointingToDeclaration//-1922210632">
+  <div class="breadcrumbs"><a href="../../../index.html">base</a><span class="delimiter">/</span><a href="../index.html">cn.charlotte.pit.util.hologram</a><span class="delimiter">/</span><span class="current">DefaultHologram</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Default</span><wbr></wbr><span><span>Hologram</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">DefaultHologram</a> : <span data-unresolved-link="cn.charlotte.pit.util.hologram/CraftHologram///PointingToDeclaration/">CraftHologram</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="550114005%2FConstructors%2F-1922210632" anchor-label="DefaultHologram" id="550114005%2FConstructors%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-hologram.html"><span>Default</span><wbr></wbr><span><span>Hologram</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="550114005%2FConstructors%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html"><span class="token annotation builtin">Nonnull</span></a> </span>loc<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-928579817%2FProperties%2F-1922210632" anchor-label="attachedTo" id="-928579817%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="attached-to.html"><span>attached</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-928579817%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="attached-to.html">attachedTo</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Entity///PointingToDeclaration/">Entity</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1431567432%2FProperties%2F-1922210632" anchor-label="isAttached" id="1431567432%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-attached.html"><span>is</span><wbr></wbr><span><span>Attached</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1431567432%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="is-attached.html">isAttached</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-695672069%2FProperties%2F-1922210632" anchor-label="lineAbove" id="-695672069%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="line-above.html"><span>line</span><wbr></wbr><span><span>Above</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-695672069%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="line-above.html">lineAbove</a><span class="token operator">: </span><a href="../-hologram/index.html">Hologram</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="281184487%2FProperties%2F-1922210632" anchor-label="lineBelow" id="281184487%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="line-below.html"><span>line</span><wbr></wbr><span><span>Below</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="281184487%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="line-below.html">lineBelow</a><span class="token operator">: </span><a href="../-hologram/index.html">Hologram</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-440829535%2FProperties%2F-1922210632" anchor-label="location" id="-440829535%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-440829535%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="location.html">location</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1688842327%2FProperties%2F-1922210632" anchor-label="text" id="-1688842327%2FProperties%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text.html"><span><span>text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1688842327%2FProperties%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="text.html">text</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2045330999%2FFunctions%2F-1922210632" anchor-label="addLineAbove" id="-2045330999%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-line-above.html"><span>add</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Above</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045330999%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-line-above.html"><span class="token function">addLineAbove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-hologram/index.html">Hologram</a></div><div class="brief ">Adds a <a href="../-hologram/index.html">Hologram</a> line above this hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="117376949%2FFunctions%2F-1922210632" anchor-label="addLineBelow" id="117376949%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-line-below.html"><span>add</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Below</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="117376949%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-line-below.html"><span class="token function">addLineBelow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-hologram/index.html">Hologram</a></div><div class="brief ">Adds a <a href="../-hologram/index.html">Hologram</a> line below this hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-345779273%2FFunctions%2F-1922210632" anchor-label="addTouchHandler" id="-345779273%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-touch-handler.html"><span>add</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-345779273%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-touch-handler.html"><span class="token function">addTouchHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../cn.charlotte.pit.util.hologram.touch/-touch-handler/index.html">TouchHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Adds a touch handler to the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1692221851%2FFunctions%2F-1922210632" anchor-label="addViewHandler" id="1692221851%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-view-handler.html"><span>add</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1692221851%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-view-handler.html"><span class="token function">addViewHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../cn.charlotte.pit.util.hologram.view/-view-handler/index.html">ViewHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Adds a view handler to the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1554389851%2FFunctions%2F-1922210632" anchor-label="clearTouchHandlers" id="1554389851%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear-touch-handlers.html"><span>clear</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1554389851%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="clear-touch-handlers.html"><span class="token function">clearTouchHandlers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Removes all <a href="../../cn.charlotte.pit.util.hologram.touch/-touch-handler/index.html">TouchHandler</a>s from the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="21964073%2FFunctions%2F-1922210632" anchor-label="clearViewHandlers" id="21964073%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear-view-handlers.html"><span>clear</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="21964073%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="clear-view-handlers.html"><span class="token function">clearViewHandlers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Removes all <a href="../../cn.charlotte.pit.util.hologram.view/-view-handler/index.html">ViewHandler</a>s from the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1949544854%2FFunctions%2F-1922210632" anchor-label="deSpawn" id="-1949544854%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="de-spawn.html"><span>de</span><wbr></wbr><span><span>Spawn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1949544854%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="de-spawn.html"><span class="token function">deSpawn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Despawns the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1603807268%2FFunctions%2F-1922210632" anchor-label="equals" id="1603807268%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1603807268%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obj<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="765842061%2FFunctions%2F-1922210632" anchor-label="getLines" id="765842061%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lines.html"><span>get</span><wbr></wbr><span><span>Lines</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="765842061%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-lines.html"><span class="token function">getLines</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../-hologram/index.html">Hologram</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="902887952%2FFunctions%2F-1922210632" anchor-label="getLinesAbove" id="902887952%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lines-above.html"><span>get</span><wbr></wbr><span>Lines</span><wbr></wbr><span><span>Above</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="902887952%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-lines-above.html"><span class="token function">getLinesAbove</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../-hologram/index.html">Hologram</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1879744508%2FFunctions%2F-1922210632" anchor-label="getLinesBelow" id="1879744508%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lines-below.html"><span>get</span><wbr></wbr><span>Lines</span><wbr></wbr><span><span>Below</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1879744508%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-lines-below.html"><span class="token function">getLinesBelow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../-hologram/index.html">Hologram</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1934245916%2FFunctions%2F-1922210632" anchor-label="getTouchHandlers" id="-1934245916%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-touch-handlers.html"><span>get</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1934245916%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-touch-handlers.html"><span class="token function">getTouchHandlers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../../cn.charlotte.pit.util.hologram.touch/-touch-handler/index.html">TouchHandler</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="602164096%2FFunctions%2F-1922210632" anchor-label="getViewHandlers" id="602164096%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-view-handlers.html"><span>get</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="602164096%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-view-handlers.html"><span class="token function">getViewHandlers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../../cn.charlotte.pit.util.hologram.view/-view-handler/index.html">ViewHandler</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="74976251%2FFunctions%2F-1922210632" anchor-label="hashCode" id="74976251%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="74976251%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1251444756%2FFunctions%2F-1922210632" anchor-label="isSpawned" id="1251444756%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-spawned.html"><span>is</span><wbr></wbr><span><span>Spawned</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1251444756%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-spawned.html"><span class="token function">isSpawned</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="957375733%2FFunctions%2F-1922210632" anchor-label="isTouchable" id="957375733%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-touchable.html"><span>is</span><wbr></wbr><span><span>Touchable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="957375733%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-touchable.html"><span class="token function">isTouchable</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="82480226%2FFunctions%2F-1922210632" anchor-label="move" id="82480226%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move.html"><span><span>move</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="82480226%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="move.html"><span class="token function">move</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html"><span class="token annotation builtin">Nonnull</span></a> </span>loc<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Moves the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1391198881%2FFunctions%2F-1922210632" anchor-label="removeLineAbove" id="-1391198881%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-line-above.html"><span>remove</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Above</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1391198881%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="remove-line-above.html"><span class="token function">removeLineAbove</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Removes the line above this hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-414342325%2FFunctions%2F-1922210632" anchor-label="removeLineBelow" id="-414342325%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-line-below.html"><span>remove</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Below</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-414342325%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="remove-line-below.html"><span class="token function">removeLineBelow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Removes the line below this hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1980657352%2FFunctions%2F-1922210632" anchor-label="removeTouchHandler" id="1980657352%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-touch-handler.html"><span>remove</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1980657352%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="remove-touch-handler.html"><span class="token function">removeTouchHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../cn.charlotte.pit.util.hologram.touch/-touch-handler/index.html">TouchHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Removes a touch handler from the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1435899862%2FFunctions%2F-1922210632" anchor-label="removeViewHandler" id="-1435899862%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-view-handler.html"><span>remove</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1435899862%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="remove-view-handler.html"><span class="token function">removeViewHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../cn.charlotte.pit.util.hologram.view/-view-handler/index.html">ViewHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Removes a view handler from the hologram</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="454741864%2FFunctions%2F-1922210632" anchor-label="setAttachedTo" id="454741864%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-hologram/set-attached-to.html"><span>set</span><wbr></wbr><span>Attached</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="454741864%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-hologram/set-attached-to.html"><span class="token function">setAttachedTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>entity<span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Entity///PointingToDeclaration/">Entity</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Attached the hologram to a entity</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1104221971%2FFunctions%2F-1922210632" anchor-label="setLocation" id="-1104221971%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-hologram/set-location.html"><span>set</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1104221971%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-hologram/set-location.html"><span class="token function">setLocation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html"><span class="token annotation builtin">Nonnull</span></a> </span>loc<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="398166877%2FFunctions%2F-1922210632" anchor-label="setText" id="398166877%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-hologram/set-text.html"><span>set</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="398166877%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-hologram/set-text.html"><span class="token function">setText</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1218574075%2FFunctions%2F-1922210632" anchor-label="setTouchable" id="1218574075%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-touchable.html"><span>set</span><wbr></wbr><span><span>Touchable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1218574075%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-touchable.html"><span class="token function">setTouchable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flag<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Changes the touchability</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2093767167%2FFunctions%2F-1922210632" anchor-label="spawn" id="2093767167%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spawn.html"><span><span>spawn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2093767167%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="spawn.html"><span class="token function">spawn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><br><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="spawn.html"><span class="token function">spawn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">receivers<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Spawns the hologram</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="spawn.html"><span class="token function">spawn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ticks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Spawns the hologram and despawns it after the specified timeout</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-103189814%2FFunctions%2F-1922210632" anchor-label="toString" id="-103189814%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-103189814%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-688856430%2FFunctions%2F-1922210632" anchor-label="update" id="-688856430%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-688856430%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Updates the content of the hologram</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interval<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Automatically updates the content of the hologram <code class="lang-kotlin">-1</code> as the interval argument will stop the update</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

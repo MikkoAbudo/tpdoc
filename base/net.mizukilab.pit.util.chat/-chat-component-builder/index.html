@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ChatComponentBuilder</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            base
+                    </a>
+            </div>
+            <div class="library-version">
+4.3.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":base:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="base::net.mizukilab.pit.util.chat/ChatComponentBuilder///PointingToDeclaration//-1922210632">
+  <div class="breadcrumbs"><a href="../../../index.html">base</a><span class="delimiter">/</span><a href="../index.html">net.mizukilab.pit.util.chat</a><span class="delimiter">/</span><span class="current">ChatComponentBuilder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Chat</span><wbr></wbr><span>Component</span><wbr></wbr><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">ChatComponentBuilder</a> : <span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1039152622%2FConstructors%2F-1922210632" anchor-label="ChatComponentBuilder" id="1039152622%2FConstructors%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-chat-component-builder.html"><span>Chat</span><wbr></wbr><span>Component</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1039152622%2FConstructors%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1551563910%2FFunctions%2F-1922210632" anchor-label="append" id="1551563910%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1589446914%2FFunctions%2F-1922210632"><span><span>append</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1551563910%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1589446914%2FFunctions%2F-1922210632"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">components<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span data-unresolved-link="net.md_5.bungee.api.chat/BaseComponent///PointingToDeclaration/">BaseComponent</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">textComponent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/TextComponent///PointingToDeclaration/">TextComponent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1554937696%2FFunctions%2F-1922210632" anchor-label="attachToEachPart" id="1554937696%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="attach-to-each-part.html"><span>attach</span><wbr></wbr><span>To</span><wbr></wbr><span>Each</span><wbr></wbr><span><span>Part</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1554937696%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="attach-to-each-part.html"><span class="token function">attachToEachPart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clickEvent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ClickEvent///PointingToDeclaration/">ClickEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="attach-to-each-part.html"><span class="token function">attachToEachPart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hoverEvent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/HoverEvent///PointingToDeclaration/">HoverEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1528629026%2FFunctions%2F-1922210632" anchor-label="bold" id="1528629026%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1528629026%2FFunctions%2F-1922210632"><span><span>bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1528629026%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1528629026%2FFunctions%2F-1922210632"><span class="token function">bold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-557224093%2FFunctions%2F-1922210632" anchor-label="color" id="-557224093%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-557224093%2FFunctions%2F-1922210632"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-557224093%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-557224093%2FFunctions%2F-1922210632"><span class="token function">color</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api/ChatColor///PointingToDeclaration/">ChatColor</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-59490259%2FFunctions%2F-1922210632" anchor-label="create" id="-59490259%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create.html"><span><span>create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-59490259%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span data-unresolved-link="net.md_5.bungee.api.chat/BaseComponent///PointingToDeclaration/">BaseComponent</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1339534365%2FFunctions%2F-1922210632" anchor-label="event" id="1339534365%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1339534365%2FFunctions%2F-1922210632"><span><span>event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1339534365%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1339534365%2FFunctions%2F-1922210632"><span class="token function">event</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clickEvent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ClickEvent///PointingToDeclaration/">ClickEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-759488570%2FFunctions%2F-1922210632" anchor-label="getCurrent" id="-759488570%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current.html"><span>get</span><wbr></wbr><span><span>Current</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-759488570%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-current.html"><span class="token function">getCurrent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/TextComponent///PointingToDeclaration/">TextComponent</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-102611777%2FFunctions%2F-1922210632" anchor-label="getParts" id="-102611777%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-parts.html"><span>get</span><wbr></wbr><span><span>Parts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-102611777%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-parts.html"><span class="token function">getParts</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1279019831%2FFunctions%2F-1922210632" anchor-label="insertion" id="-1279019831%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1279019831%2FFunctions%2F-1922210632"><span><span>insertion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1279019831%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1279019831%2FFunctions%2F-1922210632"><span class="token function">insertion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">insertion<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="150758093%2FFunctions%2F-1922210632" anchor-label="italic" id="150758093%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#150758093%2FFunctions%2F-1922210632"><span><span>italic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="150758093%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#150758093%2FFunctions%2F-1922210632"><span class="token function">italic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">italic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="70199137%2FFunctions%2F-1922210632" anchor-label="obfuscated" id="70199137%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#70199137%2FFunctions%2F-1922210632"><span><span>obfuscated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="70199137%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#70199137%2FFunctions%2F-1922210632"><span class="token function">obfuscated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obfuscated<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-993034503%2FFunctions%2F-1922210632" anchor-label="parse" id="-993034503%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parse.html"><span><span>parse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-993034503%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="parse.html"><span class="token function">parse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1113725998%2FFunctions%2F-1922210632" anchor-label="reset" id="1113725998%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1113725998%2FFunctions%2F-1922210632"><span><span>reset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1113725998%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1113725998%2FFunctions%2F-1922210632"><span class="token function">reset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="227610275%2FFunctions%2F-1922210632" anchor-label="retain" id="227610275%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#227610275%2FFunctions%2F-1922210632"><span><span>retain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="227610275%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#227610275%2FFunctions%2F-1922210632"><span class="token function">retain</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">retention<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder.FormatRetention///PointingToDeclaration/">ComponentBuilder.FormatRetention</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1109797614%2FFunctions%2F-1922210632" anchor-label="setCurrent" id="-1109797614%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-current.html"><span>set</span><wbr></wbr><span><span>Current</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1109797614%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-current.html"><span class="token function">setCurrent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tc<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/TextComponent///PointingToDeclaration/">TextComponent</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="846283648%2FFunctions%2F-1922210632" anchor-label="setCurrentClickEvent" id="846283648%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-current-click-event.html"><span>set</span><wbr></wbr><span>Current</span><wbr></wbr><span>Click</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846283648%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-current-click-event.html"><span class="token function">setCurrentClickEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clickEvent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ClickEvent///PointingToDeclaration/">ClickEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-212892672%2FFunctions%2F-1922210632" anchor-label="setCurrentHoverEvent" id="-212892672%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-current-hover-event.html"><span>set</span><wbr></wbr><span>Current</span><wbr></wbr><span>Hover</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-212892672%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-current-hover-event.html"><span class="token function">setCurrentHoverEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hoverEvent<span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/HoverEvent///PointingToDeclaration/">HoverEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ChatComponentBuilder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="972226992%2FFunctions%2F-1922210632" anchor-label="strikethrough" id="972226992%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#972226992%2FFunctions%2F-1922210632"><span><span>strikethrough</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="972226992%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#972226992%2FFunctions%2F-1922210632"><span class="token function">strikethrough</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">strikethrough<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="306064309%2FFunctions%2F-1922210632" anchor-label="underlined" id="306064309%2FFunctions%2F-1922210632" data-filterable-set=":base:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":base:dokkaHtml/main" data-filterable-set=":base:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#306064309%2FFunctions%2F-1922210632"><span><span>underlined</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="306064309%2FFunctions%2F-1922210632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":base:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#306064309%2FFunctions%2F-1922210632"><span class="token function">underlined</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">underlined<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.md_5.bungee.api.chat/ComponentBuilder///PointingToDeclaration/">ComponentBuilder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
